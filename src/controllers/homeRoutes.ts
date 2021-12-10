@@ -18,7 +18,6 @@ router.get('/forms', async (req: Request, res: Response) => {
 
 // -------- Will List ALL Submissions for a given form --------
 // ie: /submissions/4539136/
-
 router.get('/submissions/:id', async (req: Request, res: Response) => {
   try {
     const formController = new FormFunctions();
@@ -30,8 +29,6 @@ router.get('/submissions/:id', async (req: Request, res: Response) => {
     res.status(500).json({ error: err.message });
   }
 });
-
-module.exports = router;
 
 // -------- Will List info for specific submission --------
 // ie: /submission/866922837/
@@ -46,3 +43,5 @@ router.get('/submission/:id', async (req: Request, res: Response) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+module.exports = router;
