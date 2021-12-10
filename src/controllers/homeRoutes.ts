@@ -12,4 +12,11 @@ router.get('/forms', async (req: Request, res: Response) => {
   res.json({ data });
 });
 
+router.get('/submissions/:id', async (req: Request, res: Response) => {
+  const formController = new FormFunctions();
+  const { data } = await formController.getFormSubmissions(
+    parseInt(req.params.id)
+  );
+  res.json({ data });
+});
 module.exports = router;
