@@ -5,12 +5,15 @@ import FormFunctions from '../formfunctions';
 router.get('/', (req: Request, res: Response) => {
   res.json({ message: 'Welcome to the task form API' });
 });
-
+// -------- Will List ALL forms --------
 router.get('/forms', async (req: Request, res: Response) => {
   const formController = new FormFunctions();
   const { data } = await formController.getAllForms();
   res.json({ data });
 });
+
+// -------- Will List ALL Submissions for a given form --------
+// ie: /submissions/4539136/
 
 router.get('/submissions/:id', async (req: Request, res: Response) => {
   const formController = new FormFunctions();
@@ -20,3 +23,13 @@ router.get('/submissions/:id', async (req: Request, res: Response) => {
   res.json({ data });
 });
 module.exports = router;
+
+// -------- Will List info for specific submission --------
+// ie: /submission/866922837/
+router.get('/submission/:id', async (req: Request, res: Response) => {
+  const formController = new FormFunctions();
+  const { data } = await formController.getFormSubmission(
+    parseInt(req.params.id)
+  );
+  res.json({ data });
+});
