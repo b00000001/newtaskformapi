@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postbuild": "cp src/package.json dist/src/package.json && cd dist/src && npm install",
-    "watch": "nodemon dist/src/index.js"
+    "watch": "nodemon dist/src/server.js"
   },
   "repository": {
     "type": "git",

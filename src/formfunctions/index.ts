@@ -18,7 +18,7 @@ export default class FormFunctions {
     return data;
   }
   //-------- Get form by ID --------
-  getForm(id) {
+  getForm(id: Number) {
     const options = {
       method: 'GET',
       headers: {
