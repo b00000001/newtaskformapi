@@ -5,6 +5,7 @@ import FormFunctions from '../formfunctions';
 router.get('/', (req: Request, res: Response) => {
   res.json({ message: 'Welcome to the task form API' });
 });
+
 // -------- Will List ALL forms --------
 router.get('/forms', async (req: Request, res: Response) => {
   try {
@@ -36,6 +37,20 @@ router.get('/submission/:id', async (req: Request, res: Response) => {
   try {
     const formController = new FormFunctions();
     const { data } = await formController.getFormSubmission(
+      parseInt(req.params.id)
+    );
+    res.json({ data });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// -------- Will List all fiels for specified form -------
+// ie: /form/4539136/field
+router.get('/form/:id/field', async (req: Request, res: Response) => {
+  try {
+    const formController = new FormFunctions();
+    const { data } = await formController.getFormFields(
       parseInt(req.params.id)
     );
     res.json({ data });

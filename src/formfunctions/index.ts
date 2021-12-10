@@ -44,4 +44,12 @@ export default class FormFunctions {
     );
     return data;
   }
+  // -------- Get All Fields for a specified form --------
+  getFormFields(id: Number) {
+    const data = axios.get(
+      `https://www.formstack.com/api/v2/form/${id}/field.json`,
+      this.options
+    );
+    return data;
+  }
 }
