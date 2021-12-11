@@ -59,16 +59,15 @@ export default class FormFunctions {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        Authorization: 'Bearer 7179792e5be16cd935b2969fa0d43866'
+        Authorization: `Bearer ${process.env.BEARER_TOKEN}`
       },
       body: JSON.stringify({
         user_agent: 'User Agent Header',
         remote_addr: 'Client IP',
         read: false,
-        field_x: {'Testing': 'Testing'},
+        field_x: { Testing: 'Testing' },
         encryption_password: 'password'
-      }),
-      
+      })
     };
     const data2 = axios.post(
       `https://www.formstack.com/api/v2/form/${id}/submission.json`,
@@ -76,5 +75,4 @@ export default class FormFunctions {
     );
     return data2;
   }
-
 }
