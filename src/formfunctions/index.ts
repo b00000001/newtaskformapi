@@ -63,7 +63,20 @@ export default class FormFunctions {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${process.env.BEARER_TOKEN}`
         },
-        data: { read: false, field_118745518: data.name }
+        data: {
+          read: false,
+          field_118812312: data.requestor, // Requestor
+          field_118812313: data.client, // Client
+          field_118812315: data.project, // Project
+          field_118812344: data.priority, // Priority
+          field_118812348: data.deadline, // deadline
+          field_118812349: data.lead, // Lead
+          field_118812351: data.resource, // Resource
+          field_118812426: data.other_resource, // Other Resource
+          field_118812429: data.risk, // Risk
+          field_118812430: data.task_description, // Task Description
+          field_118812434: data.upload_number // File upload Number
+        }
       };
       const data2 = axios.request(options);
       return data2;
