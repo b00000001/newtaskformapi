@@ -60,4 +60,18 @@ router.get('/form/:id/field', async (req: Request, res: Response) => {
   }
 });
 
+// -------- Will make new submission for form --------
+
+router.post('/form/:id/submit', async (req: Request, res: Response) => {
+  try {
+    const formController = new FormFunctions();
+    const { data } = await formController.newFormSubmission(parseInt(req.params.id), req.body);
+    res.json({ data });
+    
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+
 module.exports = router;

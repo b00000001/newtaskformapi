@@ -47,18 +47,4 @@ VALUES
         'Low',
         'Task A',
         1
-    ),
-    (
-        '',
-        'Client B',
-        'Project B',
-        'Do Stuff',
-        2,
-        '2020-01-01',
-        'John Doe',
-        '',
-        'Medium',
-        '',
-        1
-    ),
-)
+    )
