@@ -53,26 +53,22 @@ export default class FormFunctions {
     return data;
   }
   // -------- New Form Submission --------
-  newFormSubmission(id: Number, data: any) {
-    const options = {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.BEARER_TOKEN}`
-      },
-      body: JSON.stringify({
-        user_agent: 'User Agent Header',
-        remote_addr: 'Client IP',
-        read: false,
-        field_x: { Testing: 'Testing' },
-        encryption_password: 'password'
-      })
-    };
-    const data2 = axios.post(
-      `https://www.formstack.com/api/v2/form/${id}/submission.json`,
-      options
-    );
-    return data2;
+  async newFormSubmission(id: Number, data: string) {
+    try {
+      const options = {
+        method: 'POST',
+        url: 'https://www.formstack.com/api/v2/form/4631558/submission.json',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer 7179792e5be16cd935b2969fa0d43866'
+        },
+        data: { read: false, field_x: 'Input from API route' }
+      };
+      const data2 = axios.request(options);
+      return data2;
+    } catch (err) {
+      console.log(err);
+    }
   }
 }
