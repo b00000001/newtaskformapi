@@ -74,7 +74,6 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
       parseInt(req.params.id),
       req.body
     );
-    console.log(data);
     res.json({ data2 });
     connection.query(
       'INSERT INTO newtaskform SET ?',
@@ -92,7 +91,7 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
         task_description: data.task_description,
         file_count: data.file_count
       },
-      (err, res) => {
+      (err: any, res: Response) => {
         if (err) throw err;
         console.log('record inserted');
       }
