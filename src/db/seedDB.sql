@@ -33,6 +33,21 @@ INSERT INTO
         resource,
         other_resource,
         risk,
-        task_descriptions,
-        file_count,
+        task_description,
+        file_count
     )
+VALUES
+    (
+        'John Doe',
+        'Client',
+        'TestProj',
+        'Test Task Title',
+        3,
+        '2020-01-01',
+        'Big Boss',
+        'Aaron',
+        null,
+        'High',
+        'Test Task Description',
+        2
+    );

@@ -1,6 +1,7 @@
 const router = require('express').Router();
 import { Request, Response } from 'express';
 import FormFunctions from '../formfunctions';
+import connection from '../db/connection';
 
 //-------- Just a standard greeting for the / route --------
 router.get('/', (req: Request, res: Response) => {
@@ -69,7 +70,33 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
       parseInt(req.params.id),
       req.body
     );
-    res.json({ data });
+    const { data2 } = await formController.newFormSubmission(
+      parseInt(req.params.id),
+      req.body
+    );
+    console.log(data);
+    res.json({ data2 });
+    connection.query(
+      'INSERT INTO newtaskform SET ?',
+      {
+        requestor: data.requestor,
+        client: data.client,
+        project: data.project,
+        task_title: data.task_title,
+        priority: data.priority,
+        deadline: data.deadline,
+        lead_name: data.lead_name,
+        resource: data.resource,
+        other_resource: data.other_resource,
+        risk: data.risk,
+        task_description: data.task_description,
+        file_count: data.file_count
+      },
+      (err, res) => {
+        if (err) throw err;
+        console.log('record inserted');
+      }
+    );
   } catch (err: any) {
     res.status(500).json({ error: err.message });
   }

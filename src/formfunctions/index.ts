@@ -1,5 +1,6 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
+
 dotenv.config();
 export default class FormFunctions {
   options: any;
@@ -53,6 +54,20 @@ export default class FormFunctions {
     return data;
   }
   // -------- New Form Submission --------
+  /* 
+  116495933 - Requestor
+  115659759 - Client
+  115659467 - Project
+  115659468 - Task Title
+  115660142 - Priority
+  115660255 - Deadline
+  115780615 - Lead
+  115769694 - Resource
+  115810449 - Other Resource
+  115660450 - Risk
+  115660467 - Task Description
+  116172363 - Number of Files to upload  
+  */
   async newFormSubmission(id: Number, data: string) {
     try {
       const options: any = {
@@ -61,6 +76,8 @@ export default class FormFunctions {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
+          user_agent: 'API Submission',
+
           Authorization: `Bearer ${process.env.BEARER_TOKEN}`
         },
         data: {
@@ -68,18 +85,19 @@ export default class FormFunctions {
           field_118812312: data.requestor, // Requestor
           field_118812313: data.client, // Client
           field_118812315: data.project, // Project
+          field_118812316: data.task_title, // Task Title
           field_118812344: data.priority, // Priority
           field_118812348: data.deadline, // deadline
-          field_118812349: data.lead, // Lead
+          field_118812349: data.lead_name, // Lead
           field_118812351: data.resource, // Resource
           field_118812426: data.other_resource, // Other Resource
           field_118812429: data.risk, // Risk
           field_118812430: data.task_description, // Task Description
-          field_118812434: data.upload_number // File upload Number
+          field_118812434: data.file_count // File upload Number
         }
       };
       const data2 = axios.request(options);
-      return data2;
+      return { data, data2 };
     } catch (err) {
       console.log(err);
     }
