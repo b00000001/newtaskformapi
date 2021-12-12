@@ -77,20 +77,7 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
     res.json({ data2 });
     connection.query(
       'INSERT INTO newtaskform SET ?',
-      {
-        requestor: data.requestor,
-        client: data.client,
-        project: data.project,
-        task_title: data.task_title,
-        priority: data.priority,
-        deadline: data.deadline,
-        lead_name: data.lead_name,
-        resource: data.resource,
-        other_resource: data.other_resource,
-        risk: data.risk,
-        task_description: data.task_description,
-        file_count: data.file_count
-      },
+      data,
       (err: any, res: Response) => {
         if (err) throw err;
         console.log('record inserted');
