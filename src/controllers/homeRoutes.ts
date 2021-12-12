@@ -66,15 +66,12 @@ router.get('/form/:id/field', async (req: Request, res: Response) => {
 router.post('/form/:id/submit', async (req: Request, res: Response) => {
   try {
     const formController = new FormFunctions();
-    const { data } = await formController.newFormSubmission(
+    const { data, data2 } = await formController.newFormSubmission(
       parseInt(req.params.id),
       req.body
     );
-    const { data2 } = await formController.newFormSubmission(
-      parseInt(req.params.id),
-      req.body
-    );
-    res.json({ data2 });
+    res.json({ data, data2 });
+    // res.json({ data2 });
     connection.query(
       'INSERT INTO newtaskform SET ?',
       data,

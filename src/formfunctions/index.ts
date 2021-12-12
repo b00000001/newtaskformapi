@@ -68,7 +68,7 @@ export default class FormFunctions {
   115660467 - Task Description
   116172363 - Number of Files to upload  
   */
-  async newFormSubmission(id: Number, data: string) {
+  async newFormSubmission(id: Number, data: any) {
     try {
       const options: any = {
         method: 'POST',
