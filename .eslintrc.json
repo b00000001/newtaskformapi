@@ -16,6 +16,6 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "no-conosole": true
+        "no-console": "off",
     }
 }
