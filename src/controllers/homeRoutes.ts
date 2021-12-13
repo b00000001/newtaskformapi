@@ -1,8 +1,7 @@
-const router = require('express').Router();
-import { Request, Response } from 'express';
+import { Router, Request, Response } from 'express';
 import FormFunctions from '../formfunctions';
 import connection from '../db/connection';
-
+const router = Router();
 //-------- Just a standard greeting for the / route --------
 router.get('/', (req: Request, res: Response) => {
   res.json({ message: 'Welcome to the task form API' });
