@@ -9,6 +9,8 @@ export default class FormFunctions {
       method: 'GET',
       headers: {
         Accept: 'application/json',
+        'Access-Control-Allow-Origin':
+          'https://processdistillery.formstack.com',
         Authorization: `Bearer ${process.env.BEARER_TOKEN}`
       }
     };
@@ -75,6 +77,7 @@ export default class FormFunctions {
         url: 'https://www.formstack.com/api/v2/form/4631558/submission.json',
         headers: {
           Accept: 'application/json',
+          'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',
           user_agent: 'API Submission',
 

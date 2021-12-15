@@ -11,7 +11,7 @@ CREATE TABLE newtaskform (
     project VARCHAR(255) NOT NULL,
     task_title VARCHAR(255) NOT NULL,
     priority INT NOT NULL DEFAULT 1,
-    deadline DATE NOT NULL,
+    deadline VARCHAR(255) NOT NULL,
     lead_name VARCHAR(255) NOT NULL,
     resource VARCHAR(255),
     other_resource VARCHAR(255),

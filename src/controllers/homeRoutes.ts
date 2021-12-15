@@ -62,7 +62,7 @@ router.get('/form/:id/field', async (req: Request, res: Response) => {
 });
 
 // -------- Will make new submission for form --------
-
+// ie: /form/4631558/submit
 router.post('/form/:id/submit', async (req: Request, res: Response) => {
   try {
     const formController = new FormFunctions();
@@ -77,7 +77,7 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
       data,
       (err: any, res: Response) => {
         if (err) throw err;
-        console.log('record inserted');
+        console.log('Sql Record inserted successfully');
       }
     );
   } catch (err: any) {
