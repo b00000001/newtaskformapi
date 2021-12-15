@@ -99,7 +99,7 @@ export default class FormFunctions {
           field_118812434: data.file_count // File upload Number
         }
       };
-      const data2 = axios.request(options);
+      const data2: any = axios.request(options);
       return { data, data2 };
     } catch (err) {
       console.log(err);
