@@ -1,6 +1,6 @@
-const router = require('express').Router();
-
-const homeRoutes = require('./homeRoutes');
+import { Router } from 'express';
+import homeRoutes from './homeRoutes';
+const router = Router();
 
 router.use('/', homeRoutes);
 
