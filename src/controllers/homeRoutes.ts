@@ -76,7 +76,7 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
       data,
       (err: any, res: Response) => {
         if (err) throw err;
-        console.log('Sql Record inserted successfully');
+        console.log('Record inserted successfully');
       }
     );
   } catch (err: any) {
