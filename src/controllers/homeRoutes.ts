@@ -61,7 +61,6 @@ router.get('/form/:id/field', async (req: Request, res: Response) => {
 // ie: /form/4631558/submit
 router.post('/form/:id/submit', async (req: Request, res: Response) => {
   try {
-    const formController = new FormFunctions();
     const { data, data2 } = await formController.newFormSubmission(
       parseInt(req.params.id),
       req.body
