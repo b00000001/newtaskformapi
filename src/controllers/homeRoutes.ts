@@ -1,6 +1,7 @@
-import { Router, Request, Response } from 'express';
+import { Router, Request, Response, ErrorRequestHandler } from 'express';
 import FormFunctions from '../formfunctions';
 import connection from '../db/connection';
+const formController = new FormFunctions();
 const router = Router();
 //-------- Just a standard greeting for the / route --------
 router.get('/', (req: Request, res: Response) => {
@@ -10,7 +11,6 @@ router.get('/', (req: Request, res: Response) => {
 // -------- Will List ALL forms --------
 router.get('/forms', async (req: Request, res: Response) => {
   try {
-    const formController = new FormFunctions();
     const { data } = await formController.getAllForms();
     res.json({ data });
   } catch (err: any) {
@@ -22,7 +22,6 @@ router.get('/forms', async (req: Request, res: Response) => {
 // ie: /submissions/4539136/
 router.get('/submissions/:id', async (req: Request, res: Response) => {
   try {
-    const formController = new FormFunctions();
     const { data } = await formController.getFormSubmissions(
       parseInt(req.params.id)
     );
@@ -36,7 +35,6 @@ router.get('/submissions/:id', async (req: Request, res: Response) => {
 // ie: /submission/866922837/
 router.get('/submission/:id', async (req: Request, res: Response) => {
   try {
-    const formController = new FormFunctions();
     const { data } = await formController.getFormSubmission(
       parseInt(req.params.id)
     );
@@ -50,7 +48,6 @@ router.get('/submission/:id', async (req: Request, res: Response) => {
 // ie: /form/4539136/field
 router.get('/form/:id/field', async (req: Request, res: Response) => {
   try {
-    const formController = new FormFunctions();
     const { data } = await formController.getFormFields(
       parseInt(req.params.id)
     );
@@ -71,14 +68,11 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
     );
     res.json({ data, data2 });
     // res.json({ data2 });
-    connection.query(
-      'INSERT INTO newtaskform SET ?',
-      data,
-      (err: any, res: Response) => {
-        if (err) throw err;
-        console.log('Record inserted successfully');
-      }
-    );
+    connection.query('INSERT INTO newtaskform SET ?', data, (err, res) => {
+      if (err) throw err;
+      // eslint-disable-next-line no-console
+      console.log('Record inserted successfully');
+    });
   } catch (err: any) {
     res.status(500).json({ error: err.message });
   }

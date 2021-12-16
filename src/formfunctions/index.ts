@@ -24,7 +24,7 @@ export default class FormFunctions {
     return data;
   }
   //-------- Get form by ID --------
-  getForm(id: Number) {
+  getForm(id: number) {
     const data = axios.get(
       `https://www.formstack.com/api/v2/form/${id}.json`,
       this.options
@@ -32,7 +32,7 @@ export default class FormFunctions {
     return data;
   }
   // -------- Get form submissions --------
-  getFormSubmissions(id: Number) {
+  getFormSubmissions(id: number) {
     const data = axios.get(
       `https://www.formstack.com/api/v2/form/${id}/submission.json`,
       this.options
@@ -40,7 +40,7 @@ export default class FormFunctions {
     return data;
   }
   // -------- Get form submission by ID --------
-  getFormSubmission(submissionID: Number) {
+  getFormSubmission(submissionID: number) {
     const data = axios.get(
       `https://www.formstack.com/api/v2/submission/${submissionID}.json`,
       this.options
@@ -48,7 +48,7 @@ export default class FormFunctions {
     return data;
   }
   // -------- Get All Fields for a specified form --------
-  getFormFields(id: Number) {
+  getFormFields(id: number) {
     const data = axios.get(
       `https://www.formstack.com/api/v2/form/${id}/field.json`,
       this.options
@@ -70,9 +70,9 @@ export default class FormFunctions {
   115660467 - Task Description
   116172363 - Number of Files to upload  
   */
-  async newFormSubmission(id: Number, data: any) {
+  async newFormSubmission(id: number, data: any) {
     try {
-      const options: any = {
+      const options = {
         method: 'POST',
         url: 'https://www.formstack.com/api/v2/form/4631558/submission.json',
         headers: {
@@ -80,11 +80,10 @@ export default class FormFunctions {
           'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',
           user_agent: 'API Submission',
-
+          read: false,
           Authorization: `Bearer ${process.env.BEARER_TOKEN}`
         },
         data: {
-          read: false,
           field_118812312: data.requestor, // Requestor
           field_118812313: data.client, // Client
           field_118812315: data.project, // Project
@@ -99,9 +98,10 @@ export default class FormFunctions {
           field_118812434: data.file_count // File upload Number
         }
       };
-      const data2: any = axios.request(options);
+      const data2 = axios.request(options);
       return { data, data2 };
     } catch (err) {
+      // eslint-disable-next-line
       console.log(err);
     }
   }
