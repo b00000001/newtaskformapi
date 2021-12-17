@@ -18,6 +18,19 @@ router.get('/forms', async (req: Request, res: Response) => {
   }
 });
 
+router.get('/list/:id', async (req: Request, res: Response) => {
+  try {
+    const { data } = await formController.getFormSubmissions(
+      parseInt(req.params.id)
+    );
+    res.json({ data: data.submissions.forEach((submission) => {
+      console.log(submission.id)
+    }) });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // -------- Will List ALL Submissions for a given form --------
 // ie: /submissions/4539136/
 router.get('/submissions/:id', async (req: Request, res: Response) => {

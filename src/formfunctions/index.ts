@@ -39,6 +39,15 @@ export default class FormFunctions {
     );
     return data;
   }
+  // -------- List form submissions --------
+  listFormSubmissions(id: number) {
+    const data = axios.get(
+      `https://www.formstack.com/api/v2/form/${id}/submission.json?page=1&per_page=100`,
+      this.options
+    );
+    return data
+  }
+
   // -------- Get form submission by ID --------
   getFormSubmission(submissionID: number) {
     const data = axios.get(
