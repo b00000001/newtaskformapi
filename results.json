@@ -1,0 +1,1032 @@
+[
+  [
+    {
+      "field": "115659759",
+      "value": "Piedmont Plumbing Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "QuickBooks"
+    },
+    {
+      "field": "115659468",
+      "value": "QuickBooks"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 01, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Please create a sub vendor agreement for Samantha Collins at a rate of $50 an hour, sole proprietor."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Send subcontractor agreement"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Sep 30, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Other"
+    },
+    {
+      "field": "115810449",
+      "value": "Tracy"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Please create and send a subcontractor agreement for Karyn. \r\n\r\n$36 an hour, soul proprietor. \r\n\r\nKaryn Galianese\r\n\r\n2409 The Plaza\r\nCharlotte, NC \r\n28205\r\n\r\nkaryn.galianese@gmail.com\r\n\r\n"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": "Bug Report"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 05, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "On entering a cost in missing item validation in Accounting Status, if you attempt to enter a cost in cents with no dollars, it converts it to dollars.  So .55 becomes 55.00.\r\n\r\n(I may have already reported, but this is high priority) auto save does not appear to be working other than main counts.  It does not work in requisition and accounting review."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": "Auto Populating cost on items with no cost"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 08, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "High"
+    },
+    {
+      "field": "115660467",
+      "value": "We would like you to build in logic such that when an item has no cost on a cycle cost, you query sage to determine the current moving average and populate unit cost using moving average for the adjustment.\r\n\r\nOnly items with no moving average should show up as an error in validation."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": " Cycle Count app"
+    },
+    {
+      "field": "115659468",
+      "value": "Bug report"
+    },
+    {
+      "field": "115660142",
+      "value": "1"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 01, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "High"
+    },
+    {
+      "field": "115660467",
+      "value": "The customer reports that whenever they change the order quantity on the requisitions screen to something other than the recommended order quantity that the Count quantity changes to zero. So when they submit the Count is zero when it gets to the accounting status and thus no adjustment is made.\r\n\r\nThis is ultra high priority since it is affecting operations"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": " Bulk and Vendor Orders"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 05, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "High"
+    },
+    {
+      "field": "115660467",
+      "value": "Price Brothers has requested a quote to add a new module to the Cycle Count/Requisition functionality:\r\n\r\nThere are three scenarios that the current approach does not work well for:\r\n1) Truckload Quantity Bulk Purchases.  This is where the required purchase is a truckload.  It might be 20 different items, but whatever they buy needs to equal one semi full.\r\n\r\n2) Items that when anything from a specific vendor is ordered, they want to see if they need anything else from that vendor (Think Home Depot).\r\n\r\n3) Commodity Buys.  This is where they are going to place a bulk order because of expected change in cost.  PVC fittings are a good example here.  When they hear of a price increase they will do a bulk purchase based on future savings rather than stock needs\r\n\r\nAs such, the idea is to create an alternate workflow for these vendors.\r\n\r\nTo accomplish this, we need to create a Manage Vendors Screen in Cycle Count.  It's important that this be a screen, not a config file.\r\n\r\nIn this screen, you will have the following columns and features:\r\n\r\nAdd Vendor (+)\r\n\r\nGrid with sort\r\n\r\nVendor ID.     Vendor Name     Vendor [  ]  Bulk : UoM [  ]  $ Buy [  ]\r\n\r\nWhen the \"Vendor\" checkbox is selected, the workflow changes so that when any item falls below the minimum for an item from that vendor, instead of it showing up as a recommended purchase in requisitions, it generates a new count for everything from that vendor, regardless of location.\r\n\r\nKeeping with the example of Home Depot items, there are only about 10 items, but some are in 0101, 0102 & 0104.  They don't want to place a home depot order for 1 item, since it is a manual process.\r\n\r\nWhen the Bulk \"UoM\"  or \"$ Buy\" checkbox is selected, the workflow changes so that then any items falls below the minimum for an item from that vendor, instead of it showing up as a recommended purchase in requisitions, it generates a new count for everything from that vendor, regardless of location.  But in this situation, the requisition screen itself is different.  Once the count is complete then the requisition screens is designed to help them make informed bulk purchase decisions.\r\n\r\nAn example of this is Caliber Steel.  When they order caliber steel products, they have to purchase a semi truck load.  In that case a semi truck=20 pallets.  We need to either add a UoM of \"truck\" or build logic such that the reorder QTY across all caliber steel products is 20 pallets.  Not one item, it is any mix that gets us to 20 pallets.  The app is designed to help them decide which are the best 20 pallets.  But it may not be pallets, it could just be minimum units, so we might have a UoM or selection called \"BULK\" with a conversion of 10000 EA.\r\n\r\nTo accomplish this, I propose replacing the reorder qty to be dynamic based on usage over the previous 6 months.  Usage is defined as a reduction in inventory.  This reduction will typically be a decrease both adjustment that was done by the cycle count app, but we need to think through additional scenarios.\r\n\r\nSo, when a caliber item falls below the minimum, a count is done on all caliber items and then our app suggests 2 pallets of this and 3 pallets of that and 6 pallets of the other based on usage.  I am thinking this should be based on all products available, based on % of usage, rounded to the pallet UoM.  So if an item represents 1/20th of the usage, then we would order 1 pallet.  If it represents 50% of the usage, we would order 10 pallets.  I am open to other approaches on this algorithm.\r\n\r\nNext up is exactly the same approach, but instead of it being a truck or\" BULK - 10000\". it may just be a minimum spend.  So it this situation, we need to suggest a product mix based on what the threshold is.  So if they need to spend $25,000, the app recommends the best product mix based on usage (same algorithm).  Note that this functionality will also be used for \"Free Product\".  Frequently vendors will give Price Brothers a \"rebate\", which allows them to use the rebate to 'purchase' product.  This results in a zero dollar purchase order in sage.  So on this version of the app, we need to add a $0 checkbox, that when checked, changes the cost to zero on the corresponding order.\r\n\r\nI assume we need to setup a time to talk about this one.\r\n\r\n\r\n\r\n\r\n"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": " Bulk and Vendor Orders"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 05, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "High"
+    },
+    {
+      "field": "115660467",
+      "value": "Price Brothers has requested a quote to add a new module to the Cycle Count/Requisition functionality:\r\n\r\nThere are three scenarios that the current approach does not work well for:\r\n1) Truckload Quantity Bulk Purchases.  This is where the required purchase is a truckload.  It might be 20 different items, but whatever they buy needs to equal one semi full.\r\n\r\n2) Items that when anything from a specific vendor is ordered, they want to see if they need anything else from that vendor (Think Home Depot).\r\n\r\n3) Commodity Buys.  This is where they are going to place a bulk order because of expected change in cost.  PVC fittings are a good example here.  When they hear of a price increase they will do a bulk purchase based on future savings rather than stock needs\r\n\r\nAs such, the idea is to create an alternate workflow for these vendors.\r\n\r\nTo accomplish this, we need to create a Manage Vendors Screen in Cycle Count.  It's important that this be a screen, not a config file.\r\n\r\nIn this screen, you will have the following columns and features:\r\n\r\nAdd Vendor (+)\r\n\r\nGrid with sort\r\n\r\nVendor ID.     Vendor Name     Vendor [  ]  Bulk : UoM [  ]  $ Buy [  ]\r\n\r\nWhen the \"Vendor\" checkbox is selected, the workflow changes so that when any item falls below the minimum for an item from that vendor, instead of it showing up as a recommended purchase in requisitions, it generates a new count for everything from that vendor, regardless of location.\r\n\r\nKeeping with the example of Home Depot items, there are only about 10 items, but some are in 0101, 0102 & 0104.  They don't want to place a home depot order for 1 item, since it is a manual process.\r\n\r\nWhen the Bulk \"UoM\"  or \"$ Buy\" checkbox is selected, the workflow changes so that then any items falls below the minimum for an item from that vendor, instead of it showing up as a recommended purchase in requisitions, it generates a new count for everything from that vendor, regardless of location.  But in this situation, the requisition screen itself is different.  Once the count is complete then the requisition screens is designed to help them make informed bulk purchase decisions.\r\n\r\nAn example of this is Caliber Steel.  When they order caliber steel products, they have to purchase a semi truck load.  In that case a semi truck=20 pallets.  We need to either add a UoM of \"truck\" or build logic such that the reorder QTY across all caliber steel products is 20 pallets.  Not one item, it is any mix that gets us to 20 pallets.  The app is designed to help them decide which are the best 20 pallets.  But it may not be pallets, it could just be minimum units, so we might have a UoM or selection called \"BULK\" with a conversion of 10000 EA.\r\n\r\nTo accomplish this, I propose replacing the reorder qty to be dynamic based on usage over the previous 6 months.  Usage is defined as a reduction in inventory.  This reduction will typically be a decrease both adjustment that was done by the cycle count app, but we need to think through additional scenarios.\r\n\r\nSo, when a caliber item falls below the minimum, a count is done on all caliber items and then our app suggests 2 pallets of this and 3 pallets of that and 6 pallets of the other based on usage.  I am thinking this should be based on all products available, based on % of usage, rounded to the pallet UoM.  So if an item represents 1/20th of the usage, then we would order 1 pallet.  If it represents 50% of the usage, we would order 10 pallets.  I am open to other approaches on this algorithm.\r\n\r\nNext up is exactly the same approach, but instead of it being a truck or\" BULK - 10000\". it may just be a minimum spend.  So it this situation, we need to suggest a product mix based on what the threshold is.  So if they need to spend $25,000, the app recommends the best product mix based on usage (same algorithm).  Note that this functionality will also be used for \"Free Product\".  Frequently vendors will give Price Brothers a \"rebate\", which allows them to use the rebate to 'purchase' product.  This results in a zero dollar purchase order in sage.  So on this version of the app, we need to add a $0 checkbox, that when checked, changes the cost to zero on the corresponding order.\r\n\r\nI assume we need to setup a time to talk about this one.\r\n\r\n\r\n\r\n\r\n"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": "Bug Report + Feature Request Open PO"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 08, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "Moderate"
+    },
+    {
+      "field": "115660467",
+      "value": "On the Requisition screen, when you click the link to the open PO, it works the first time, but then if you go back to the requisition screen and click a different PO, it takes you back to the first PO that you clicked.  You have to completely back out of the screen (losing your changes and thus part of the autosave issue), and go back in and then you can see the second PO.  If you try a third, you have the same issue.\r\n\r\nThe customer would also like us to change the behavior here to only shop open POs for the location that you are working on a requisition for.  They frequently have the same item on order at North and South and the current approach forces them to look at POs for all locations, even though it really has no bearing on whether they need to order or now."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Expand CC Authorization form"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 04, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Other"
+    },
+    {
+      "field": "115810449",
+      "value": "Karyn"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Following up on text.\r\n\r\nPlease add CVV Field and add section for one time or recurring pricing\r\n\r\nAlso add ACH Option with same one time or recurring\r\n\r\nAdd Routing number\r\nAdd Account number"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Create online Bios"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 14, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Other"
+    },
+    {
+      "field": "115810449",
+      "value": "Karyn"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "We are working on a new website and I need you to take the lead on creating Bios for each of our Practice Area Leads and some of our secondary resources.\r\n\r\nSamuel will need to set you up with a website user and the link to access it.\r\n\r\nWe will talk about this when we have our 1:1"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": "Bug Report - Manually add new item"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 04, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "High"
+    },
+    {
+      "field": "115660467",
+      "value": "When they attempted to manually add this item to the account they got an unexpected error that is completely unfriendly. Please let us know what if anything we need to do on our end."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": "Edit count directly in requisition screen"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 15, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "High"
+    },
+    {
+      "field": "115660467",
+      "value": "It has become a regular occurrence that while reviewing the requisition, the person reviewing realizes that account is off by a major factor. Think a situation where it should be 4000 ea and it’s 40 Ea.\r\n\r\nWe would like to modify the requisition screen so that you can update the account in the requisition screen. But I’m not comfortable with that actually updating the count, so I propose that when you update the count in requisitions it automatically adds it to the spot check and pre-populates the spot check count with the number entered.\r\n\r\nThis keeps it all in the same flow and we don’t have to keep track of where that change came from.\r\n\r\nI am open to adjustments to this approach, but it seems pretty clean to me."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Marketing"
+    },
+    {
+      "field": "115659468",
+      "value": "Create Press Release"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 04, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "High"
+    },
+    {
+      "field": "115660467",
+      "value": "Create a press release announcing that Dune Digital is now part of Process Distillery."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "SOP"
+    },
+    {
+      "field": "115659468",
+      "value": "Create SOP for Warehouse App"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 31, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "High"
+    },
+    {
+      "field": "115660467",
+      "value": "Create an SOP for the customer on use of the Warehouse app that we built.\r\n\r\nWe will \"own\" this document and will need to update it whenever the app gets updated (which is currently weekly)."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Create Subcontractor Agreement"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 05, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "Moderate"
+    },
+    {
+      "field": "115660467",
+      "value": "Create Subcontractor Agreement (Can you do this today?)\r\n\r\nUse yours as template, Save to Dropbox.  I am sending you an invite now.\r\n\r\nAsher Strickland\r\nasherstrickland@icloud.com\r\n(207) 274-4977 Mobile\r\n\r\nText him for address.  Introduce yourself as my assistant (or Badass Magical  Unicorn)\r\n\r\n$15/hr Sole Proprietor\r\n\r\nSend to me for approval\r\n\r\nWhen approved, email to Asher.\r\n\r\nWhen you received it back signed, forward to the Bookkeeper.\r\n\r\nOnboarding SOP attached, I am looking for you to own this process for all resources.\r\n"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": "Improve Error Message"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 13, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Error message \"No item for with search criteria\" in Cycle Count needs to be more clear."
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": "Item not Allowed in Location"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 13, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Remedy this item/location issue in Cycle Count:\r\n\"When I scan this box of zip ties, which are located in 0101 section A, It works as intended. When scanning the same box but in a 0103 count, I will scan the box and get an error message\""
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Price Brothers Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Cycle Count"
+    },
+    {
+      "field": "115659468",
+      "value": "Error Message blocked by Keyboard"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 13, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Hrayr Galoyan"
+    },
+    {
+      "field": "115769694",
+      "value": "Hrayr Gayolan"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "The Error message \"No item was found with search criteria\" is being blocked by the Ipad's keyboard prompt, Making the error message unreadable. (Both Portrait and landscape)"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Piedmont Plumbing Inc."
+    },
+    {
+      "field": "115659467",
+      "value": "Formstack (FS)"
+    },
+    {
+      "field": "115659468",
+      "value": "Replicate Paper Forms into Formstack with Logic"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 08, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Samuel Strickland"
+    },
+    {
+      "field": "115769694",
+      "value": "Jonathan Katzke"
+    },
+    {
+      "field": "115660450",
+      "value": "Moderate"
+    },
+    {
+      "field": "115660467",
+      "value": "We are going to start with forms for the three phases of their workflow. Slab, Rough, and Trim. \r\n\r\nI need you and I to figure out if we need to create an individual form for each paper sheet - OR can we create one form for each phase that has multi-use based on logic.\r\n\r\nBefore you start building, think out the logic without getting overly complicated. This should be a straight forward quick win for us to show the client forward progress that immediately alleviates some pain points for them."
+    },
+    {
+      "field": "116172363",
+      "value": "6"
+    },
+    {
+      "field": "116173718",
+      "value": "https://www.formstack.com/admin/download/file/11478382420"
+    },
+    {
+      "field": "116174686",
+      "value": "https://www.formstack.com/admin/download/file/11478382421"
+    },
+    {
+      "field": "116174701",
+      "value": "https://www.formstack.com/admin/download/file/11478382422"
+    },
+    {
+      "field": "116174754",
+      "value": "https://www.formstack.com/admin/download/file/11478382423"
+    },
+    {
+      "field": "116174803",
+      "value": "https://www.formstack.com/admin/download/file/11478382424"
+    },
+    {
+      "field": "116174805",
+      "value": "https://www.formstack.com/admin/download/file/11478382425"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Create Dropbox Folder for Formstack Uploads"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 08, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Create a folder in Dropbox for New Task uploads. This will house all uploaded files from the New Task form.\r\n\r\n"
+    },
+    {
+      "field": "116172363",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Setup Interview for housekeeper for Parkwood Ave"
+    },
+    {
+      "field": "115660142",
+      "value": "4"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 31, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Erika Thompson"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Please find us some options for a housekeeper.  We specifically DO NOT want one of the major names.  So no Merry Maids or any of those.\r\n\r\nSpecifically, we are looking for a trustworthy individual who will clean what needs to be cleaned, not just whats on the list.\r\n\r\nThis means we are looking for things like the baseboards to be cleaned for example.  It will be important to understand what \"they don't do\".  We don't expect them to do the exterior windows, but cleaning doggie nose smudges won't be too much to ask of the right person.\r\n\r\nThis is one of the things I was wanting The NextDoor app for, but since you are in the hood, you can probably see some recommendations on your login."
+    },
+    {
+      "field": "116172363",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Lawn Care for Spruce Pine"
+    },
+    {
+      "field": "115660142",
+      "value": "4"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 15, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Please identify a lawn care service for our Spruce Pine property\r\n\r\n7019 Crabtree Rd\r\nSpruce Pine, NC 28777\r\n\r\nWe had hired a local guy, but he ghosted us.\r\n\r\nWe need someone that we can pay by credit/debit.\r\n\r\nI have attached two leads on this\r\n\r\n"
+    },
+    {
+      "field": "116172363",
+      "value": "2"
+    },
+    {
+      "field": "116173718",
+      "value": "https://www.formstack.com/admin/download/file/11482064972"
+    },
+    {
+      "field": "116174686",
+      "value": "https://www.formstack.com/admin/download/file/11482064973"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Add Email User"
+    },
+    {
+      "field": "115660142",
+      "value": "1"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 08, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "When we get Asher's signed agreement back.  Add him as a user in gmail.  I have made you a user and group admin.  You should now see a button for \"Manage this organization\".  See screenshot attached.\r\n\r\nI am going to assign another task for you to add this procedure to our Contractor onboarding SOP."
+    },
+    {
+      "field": "116172363",
+      "value": "1"
+    },
+    {
+      "field": "116173718",
+      "value": "https://www.formstack.com/admin/download/file/11482148043"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Update SOP for Email User Creation"
+    },
+    {
+      "field": "115660142",
+      "value": "5"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 31, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Update the SOP by documenting the step by step process of how to add a user to our email.\r\n\r\nHere is the first screenshot, but you will need to grab screenshot with Snagit of each screen as you setup the user."
+    },
+    {
+      "field": "116172363",
+      "value": "1"
+    },
+    {
+      "field": "116173718",
+      "value": "https://www.formstack.com/admin/download/file/11482156518"
+    }
+  ],
+  [
+    {
+      "field": "115659759",
+      "value": "Process Distillery"
+    },
+    {
+      "field": "115659467",
+      "value": "Admin"
+    },
+    {
+      "field": "115659468",
+      "value": "Add new email group"
+    },
+    {
+      "field": "115660142",
+      "value": "4"
+    },
+    {
+      "field": "115660255",
+      "value": "Oct 08, 2021"
+    },
+    {
+      "field": "115780615",
+      "value": "Dan Colby"
+    },
+    {
+      "field": "115769694",
+      "value": "Karyn Galianese"
+    },
+    {
+      "field": "115660450",
+      "value": "Low"
+    },
+    {
+      "field": "115660467",
+      "value": "Add a new email group called Tasks.  Add myself, yourself, Samuel and Erika to the group for now.\r\n\r\nThis will create an email called tasks@processdistillery.com.\r\n\r\nWe are going to use this with formstack as the from email address for the new task form, so that if anyone replies to a task email, we get it.\r\n\r\nWhen complete, send a task to Samuel to set it up as the from email on the new task form."
+    },
+    {
+      "field": "116172363",
+      "value": "1"
+    }
+  ]
+]

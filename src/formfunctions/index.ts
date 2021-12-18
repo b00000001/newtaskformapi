@@ -45,7 +45,7 @@ export default class FormFunctions {
       `https://www.formstack.com/api/v2/form/${id}/submission.json?page=1&per_page=100`,
       this.options
     );
-    return data
+    return data;
   }
 
   // -------- Get form submission by ID --------

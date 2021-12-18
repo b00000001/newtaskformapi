@@ -1,8 +1,25 @@
 import { Router, Request, Response, ErrorRequestHandler } from 'express';
 import FormFunctions from '../formfunctions';
 import connection from '../db/connection';
+import fs from 'fs';
+import { isForStatement } from 'typescript';
+
 const formController = new FormFunctions();
 const router = Router();
+
+const addOldToDb = (ids) => {
+  ids.forEach((id) => {
+    // connection.query(
+    //   'INSERT INTO newtaskform SET ?', data,
+    //   (err, result) => {
+    //     if (err) {
+    //       console.log(err);
+    //     }
+    //   }
+    // );
+  });
+};
+
 //-------- Just a standard greeting for the / route --------
 router.get('/', (req: Request, res: Response) => {
   res.json({ message: 'Welcome to the task form API' });
@@ -17,15 +34,43 @@ router.get('/forms', async (req: Request, res: Response) => {
     res.status(500).json({ message: err.message });
   }
 });
-
+// so far this just logs an array filled with submission details
 router.get('/list/:id', async (req: Request, res: Response) => {
+  const idArr: any = [];
+  const submissionsArr = [];
   try {
-    const { data } = await formController.getFormSubmissions(
+    const { data } = await formController.listFormSubmissions(
       parseInt(req.params.id)
     );
-    res.json({ data: data.submissions.forEach((submission) => {
-      console.log(submission.id)
-    }) });
+    data.submissions.forEach((submission) => {
+      idArr.push(submission.id);
+    });
+    for (let i = 0; i < idArr.length; i++) {
+      const { data } = await formController.getFormSubmission(idArr[i]);
+      submissionsArr.push(data.data);
+    }
+    submissionsArr.forEach((submission) => {
+      const res = submission.reduce(
+        (obj, item) => Object.assign(obj, { [item.field]: item.value }),
+        {}
+      ); // this reduces the array of object to just one object
+      console.log({
+        requestor: res['116495933'] || null,
+        client: res['115659759'],
+        project: res['115659467'],
+        task_title: res['115659468'],
+        priority: res['115660142'],
+        deadline: res['115660255'],
+        lead: res['115780615'],
+        resource: res['115769694'],
+        other_resource: res['115810449'],
+        risk: res['115660450'],
+        task_description: res['115660467'],
+        file_count: res['116172363']
+      });
+    });
+
+    res.json(submissionsArr);
   } catch (err: any) {
     res.status(500).json({ error: err.message });
   }
