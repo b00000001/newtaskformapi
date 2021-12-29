@@ -1,24 +1,26 @@
-DROP DATABASE IF EXISTS newtaskDB;
+DROP DATABASE IF EXISTS newtaskformDB;
 
-CREATE DATABASE newtaskDB;
+DROP TABLE IF EXISTS newtaskform;
 
-USE newtaskDB;
+CREATE DATABASE newtaskformDB;
+
+USE newtaskformDB;
 
 CREATE TABLE newtaskform (
-    id INT NOT NULL AUTO_INCREMENT,
-    requestor VARCHAR(255),
-    client VARCHAR(255) NOT NULL,
-    project VARCHAR(255) NOT NULL,
-    task_title VARCHAR(255) NOT NULL,
+    id INT NOT NULL IDENTITY(1,1),
+    requestor VARCHAR(50) NOT NULL,
+    client VARCHAR(50) NOT NULL,
+    project VARCHAR(50) NOT NULL,
+    task_title VARCHAR(50) NOT NULL, 
     priority INT NOT NULL DEFAULT 1,
-    deadline VARCHAR(255) NOT NULL,
-    lead_name VARCHAR(255) NOT NULL,
-    resource VARCHAR(255),
-    other_resource VARCHAR(255),
-    risk VARCHAR(255) NOT NULL DEFAULT 'Low',
-    task_description VARCHAR(255),
+    deadline VARCHAR(50) NOT NULL,
+    lead_name VARCHAR(50) NOT NULL,
+    resource VARCHAr(50),
+    other_resource VARCHAR(50),
+    risk VARCHAR(50) NOT NULL DEFAULT 'Low',
+    task_description VARCHAR(1000),
     file_count INT NOT NULL DEFAULT 1,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id)   
 );
 
 INSERT INTO
