@@ -1,11 +1,13 @@
-import mysql from 'mysql';
+import sql from 'mssql';
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  port: 3306,
-  password: '',
-  database: 'newtaskDB'
+const connection = sql.connect({
+  server: 'DESKTOP-KP1GG9R',
+  user: 'sa',
+  password: 's0l1dsnake',
+  database: 'newtaskformDB',
+  trustServerCertificate: true
 });
 
 export default connection;
+
+// Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;

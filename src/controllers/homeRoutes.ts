@@ -1,6 +1,14 @@
 import { Router, Request, Response, ErrorRequestHandler } from 'express';
 import FormFunctions from '../formfunctions';
-import connection from '../db/connection';
+import sql from 'mssql';
+
+const connection = sql.connect({
+  server: 'DESKTOP-KP1GG9R',
+  user: 'sa',
+  password: 's0l1dsnake',
+  database: 'newtaskformDB',
+  trustServerCertificate: true
+});
 
 const formController = new FormFunctions();
 const router = Router();
@@ -123,7 +131,7 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
     );
     res.json({ data, data2 });
     // res.json({ data2 });
-    connection.query('INSERT INTO newtaskform SET ?', data, (err, res) => {
+    sql.query('INSERT INTO newtaskform SET ?', data, (err, res) => {
       if (err) throw err;
       // eslint-disable-next-line no-console
       console.log('Record inserted successfully');
