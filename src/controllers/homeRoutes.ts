@@ -131,11 +131,25 @@ router.post('/form/:id/submit', async (req: Request, res: Response) => {
     );
     res.json({ data, data2 });
     // res.json({ data2 });
-    sql.query('INSERT INTO newtaskform SET ?', data, (err, res) => {
-      if (err) throw err;
-      // eslint-disable-next-line no-console
-      console.log('Record inserted successfully');
-    });
+    sql.query(
+      `INSERT INTO newtaskform (requestor,
+      client,
+      project,
+      task_title,
+      priority,
+      deadline,
+      lead_name,
+      resource,
+      other_resource,
+      risk,
+      task_description,
+      file_count) values ('${data.requestor}', '${data.client}', '${data.project}', '${data.task_title}', '${data.priority}', '${data.deadline}', '${data.lead_name}', '${data.resource}', '${data.other_resource}', '${data.risk}', '${data.task_description}', '${data.file_count}')`,
+      (err, res) => {
+        if (err) throw err;
+        // eslint-disable-next-line no-console
+        console.log('Record inserted successfully');
+      }
+    );
   } catch (err: any) {
     res.status(500).json({ error: err.message });
   }
