@@ -2,8 +2,8 @@ import { Service } from 'node-windows';
 
 // Create a new service object
 const svc = new Service({
-  name: 'expressapi',
-  description: 'The nodejs.org example web server.',
+  name: 'Express JS API',
+  description: 'New Task Form API.',
   script: 'C:\\Users\\Aaron\\activities\\newtaskformapi\\dist\\src\\server.js'
 });
 
